@@ -195,7 +195,6 @@ export default new Bundler({
               pipeline: asset.pipeline,
             });
             bundleByType.set(bundle.type, bundle);
-            siblingBundles.push(bundle);
             bundlesByEntryAsset.set(asset, bundle);
             bundleGraph.createAssetReference(dependency, asset);
             bundleGraph.createBundleReference(parentBundle, bundle);
